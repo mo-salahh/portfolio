@@ -107,35 +107,37 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 export const qualificationsData: QualificationsData = {
-  education: [
-    {
-      title: "Dammam School",
-      subtitle: "Saudi Arabia - Secondary School",
-      period: "2014 - 2017",
-    },
-    {
-      title: "İTO 15 Temmuz Şehitleri AİHL",
-      subtitle: "Turkey - High School",
-      period: "2017 - 2020",
-    },
-    {
-      title: "Computer Engineer",
-      subtitle: "Marmara University",
-      period: "2020 - 2024",
-    },
-  ],
-  work: [
-    {
-      title: "Game Developer",
-      subtitle: "Turkey - Intern at Wolves Interactive",
-      period: "2022",
-    },
-    {
-      title: "Web Developer",
-      subtitle: "Freelance - Online",
-      period: "2023",
-    },
-  ],
+  qualifications: {
+    "education": [
+      {
+        title: "Dammam School",
+        subtitle: "Saudi Arabia - Secondary School",
+        period: "2014 - 2017",
+      },
+      {
+        title: "İTO 15 Temmuz Şehitleri AİHL",
+        subtitle: "Turkey - High School",
+        period: "2017 - 2020",
+      },
+      {
+        title: "Computer Engineer",
+        subtitle: "Marmara University",
+        period: "2020 - 2024",
+      },
+    ],
+    "work": [
+      {
+        title: "Game Developer",
+        subtitle: "Turkey - Intern at Wolves Interactive",
+        period: "2022",
+      },
+      {
+        title: "Web Developer",
+        subtitle: "Freelance - Online",
+        period: "2023",
+      },
+    ],
+  },
 };
 
 export const servicesData: ServicesData[] = [

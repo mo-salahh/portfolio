@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import QualificationContent from './QualificationContent';
 import QualificationTabs from './QualificationTabs';
-import { QualificationItemType } from '../types';
+import { QualificationsData } from '../types';
 
-interface QualificationProps {
-    qualifications: {
-        [key: string]: QualificationItemType[];
-    };
-}
-
-const QualificationSection: React.FC<QualificationProps> = ({ qualifications }) => {
+const QualificationSection: React.FC<QualificationsData> = ({ qualifications }) => {
     const tabs = Object.keys(qualifications);
     const [activeTab, setActiveTab] = useState<string>(tabs[0]);
 

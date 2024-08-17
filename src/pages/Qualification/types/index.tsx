@@ -5,6 +5,7 @@ export interface QualificationItemType {
 }
 
 export interface QualificationsData {
-  education: QualificationItemType[];
-  work: QualificationItemType[];
+  qualifications: {
+    [key: string]: QualificationItemType[];
+  };
 }

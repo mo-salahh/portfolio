@@ -5,7 +5,7 @@ import { qualificationsData } from '../../data';
 const Qualification: React.FC = () => {
     return (
         <div>
-            <QualificationSection qualifications={qualificationsData} />
+            <QualificationSection {...qualificationsData} />
         </div>
     );
 };

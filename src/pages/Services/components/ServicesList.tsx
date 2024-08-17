@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ServiceItem from './ServiceItem';
 import ServiceModal from './ServiceModal';
 import { ServicesData } from '../types';
