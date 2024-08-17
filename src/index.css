@@ -725,6 +725,7 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
+  position: relative;
 }
 
 .portfolio__content {
@@ -795,6 +796,14 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: -2.5rem;
+}
+
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  margin-right: 2px;
 }
 
 .swiper-pagination-bullet-active {
