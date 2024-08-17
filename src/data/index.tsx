@@ -30,7 +30,7 @@ export const footerData: FooterType = {
 export const aboutData: AboutData = {
   imageSrc: "assets/images/frontend.jpeg",
   description:
-    "I am a Computer Engineer, graduated from Marmara University, with a strong passion for web development. I have over three years of experience in both frontend and backend development, along with hands-on experience in mobile application development. I am seeking a challenging role to further hone my skills. My experience spans across multiple companies, with a portfolio of successfully completed projects that showcase my ability to solve complex problems and deliver interactive, user-friendly solutions.",
+    "I'm a Computer Engineer, graduated from Marmara University, with over three years of experience in frontend and backend development. I'm passionate about web development and have a proven track record of solving complex problems and delivering user-friendly solutions across multiple companies.",
   infoItems: [
     { title: "03+", name: "Years of \nExperience" },
     { title: "20+", name: "Completed \nProjects" },
@@ -308,8 +308,8 @@ export const skillCategories: SkillCategoryType[] = [
     icon: "uil-database",
     skills: [
       { name: "MySQL", percentage: "85%" },
+      { name: "SQL Server", percentage: "75%" },
       { name: "Firebase", percentage: "75%" },
-      { name: "MongoDB", percentage: "75%" },
       { name: "AWS DynamoDB", percentage: "75%" },
     ],
   },
