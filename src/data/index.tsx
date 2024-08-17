@@ -93,7 +93,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee",
     description:
       "A comprehensive platform for educational and entertainment purposes, accessible via mobile applications and websites.",
-    links: [{"title":"Website", "href": "https://app.alifbee.com/"}],
+    links: [{"title":"Platform", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Developed and maintained backend services using Django.",
       "Integrated FastAPI for enhanced performance.",
