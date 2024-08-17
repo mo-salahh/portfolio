@@ -93,7 +93,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee",
     description:
       "A comprehensive platform for educational and entertainment purposes, accessible via mobile applications and websites.",
-    links: [{"title":"Web", "href": "https://app.alifbee.com/"}, {"title":"Android", "href": "https://play.google.com/store/apps/details?id=tr.com.arabeeworld.arabee&pcampaignid=web_share"}],
+    links: [{"title":"Website", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Developed and maintained backend services using Django.",
       "Integrated FastAPI for enhanced performance.",
@@ -107,7 +107,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee Kids",
     description:
       "A specialized mobile application targeting children's educational content.",
-    links: [{"title": 'Google Store', "href": 'https://alifbee.app/alifbeekids-app'}, {"title": 'Apple Store', "href": 'https://alifbee.app/alifbeekids-app'}],
+    links: [{"title": 'Website', "href": 'https://alifbeekids.com/en'}],
     modalContent: [
       "Built backend services using Django.",
       "Ensured secure and efficient content management.",
