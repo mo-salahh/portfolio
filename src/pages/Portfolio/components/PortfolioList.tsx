@@ -22,9 +22,9 @@ const PortfolioList: React.FC<PortfolioListProps> = ({ items }) => {
 
     return (
         <div className="portfolio__container container swiper-container">
-            {/* <Swiper spaceBetween={30} slidesPerView={1} navigation pagination={{ clickable: true }}>
+            {/* <Swiper spaceBetween={30} slidesPerView={1} navigation pagination={{ clickable: true }}> */}
                 {items.map((item) => (
-                    <SwiperSlide key={item.id}>
+                    // <SwiperSlide key={item.id}>
                         <PortfolioItem
                             imgSrc={item.imgSrc}
                             title={item.title}
@@ -32,9 +32,9 @@ const PortfolioList: React.FC<PortfolioListProps> = ({ items }) => {
                             githubLink={item.githubLink}
                             onViewMore={() => handleViewMore(item.id)}
                         />
-                    </SwiperSlide>
+                    // </SwiperSlide>
                 ))}
-            </Swiper> */}
+            {/* </Swiper> */}
 
             {/* Swiper Navigation Buttons */}
             <div className="swiper-button-next">
