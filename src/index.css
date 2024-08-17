@@ -275,7 +275,7 @@ img {
 
 .home__content {
   grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: 0.5rem;
   align-items: center;
 }
 
@@ -486,50 +486,6 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 90%;
-}
-
-.skills__js {
-  width: 80%;
-}
-
-.skills__php {
-  width: 80%;
-}
-
-.skills__sql {
-  width: 85%;
-}
-
-.skills__unity {
-  width: 70%;
-}
-
-.skills__csharp {
-  width: 60%;
-}
-
-.skills__game-assets {
-  width: 50%;
-}
-
-.skills__java {
-  width: 90%;
-}
-
-.skills__pyhton {
-  width: 80%;
-}
-
-.skills__c {
-  width: 70%;
-}
-
 .skills__close .skills__list {
   height: 0;
   overflow: hidden;
@@ -619,7 +575,7 @@ img {
 .services__content {
   position: relative;
   background-color: var(--container-color);
-  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  padding: 3.5rem 0.5rem 1.25rem 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
@@ -1163,7 +1119,7 @@ img {
     }
 
     .home__content {
-      padding-top: 5.5rem;
+      padding-top: 0.5rem;
       column-gap: 2rem;
     }
     .home__blob {
@@ -1208,7 +1164,7 @@ img {
       font-size: 2rem;
     }
     .services__content {
-      padding: 6rem 0 2rem 2.5rem;
+      padding: 6rem 0 2rem 1rem;
     }
 
     .services__modal-content {

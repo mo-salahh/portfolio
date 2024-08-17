@@ -5,7 +5,7 @@ interface SkillCategoryProps {
     title: string;
     subtitle: string;
     icon: string;
-    skills: { name: string; percentage: string; className: string }[];
+    skills: { name: string; percentage: string; }[];
     isOpen: boolean;
     onToggle: () => void;
 }
@@ -24,7 +24,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, subtitle, icon, sk
 
             <div className="skills__list grid">
                 {skills.map((skill, index) => (
-                    <SkillItem key={index} name={skill.name} percentage={skill.percentage} className={skill.className} />
+                    <SkillItem key={index} name={skill.name} percentage={skill.percentage} />
                 ))}
             </div>
         </div>

@@ -1,7 +1,6 @@
 export interface SkillItemType {
     name: string;
     percentage: string;
-    className: string;
 }
 
 export interface SkillCategoryType {

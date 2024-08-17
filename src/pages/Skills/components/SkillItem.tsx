@@ -1,7 +1,7 @@
 import React from 'react';
 import { SkillItemType as SkillItemProps } from '../types';
 
-const SkillItem: React.FC<SkillItemProps> = ({ name, percentage, className }) => {
+const SkillItem: React.FC<SkillItemProps> = ({ name, percentage }) => {
     return (
         <div className="skills__data">
             <div className="skills__titles">
@@ -9,7 +9,7 @@ const SkillItem: React.FC<SkillItemProps> = ({ name, percentage, className }) =>
                 <span className="skills__number">{percentage}</span>
             </div>
             <div className="skills__bar">
-                <span className={`skills__percentage ${className}`}></span>
+                <span style={{width: percentage}} className={`skills__percentage`}></span>
             </div>
         </div>
     );
