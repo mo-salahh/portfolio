@@ -74,8 +74,22 @@ export const homeData: HomeData = {
 
 export const portfolioItems: PortfolioItem[] = [
   {
+    id: 7,
+    imgSrc: "assets/images/dicom_viewer.png",
+    title: "DICOM Web Viewer",
+    description:
+      "A web-based viewer for medical imaging data in the DICOM format.",
+    links: [],
+    modalContent: [
+      "Developed the user interface for handling and displaying complex medical images.",
+      "Ensured compatibility with various browsers and devices.",
+      "Focused on performance and efficient rendering of images.",
+      "Collaborated with medical professionals to refine the user interface.",
+    ],
+  },
+  {
     id: 1,
-    imgSrc: "assets/images/alifbee.png",
+    imgSrc: "assets/images/alifbee_web.png",
     title: "Alifbee",
     description:
       "A comprehensive platform for educational and entertainment purposes, accessible via mobile applications and websites.",
@@ -121,7 +135,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Adam",
     description:
       "A data entry system used to manage and input data for the primary projects, Alifbee and Alifbee Kids.",
-    links: [{"title":"", "href": "https://app.alifbee.com/"}],
+    links: [],
     modalContent: [
       "Developed backend with PHP Laravel.",
       "Handled data management and integration with Alifbee and Alifbee Kids.",
@@ -130,47 +144,50 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    id: 5,
-    imgSrc: "assets/images/lms.png",
-    title: "LMS (Learning Management System)",
+    id: 8,
+    imgSrc: "assets/images/ai_chatbot.png",
+    title: "AI Chatbot Application",
     description:
-      "An educational platform for managing and delivering online learning content.",
-    links: [{"title":"", "href": "https://app.alifbee.com/"}],
+      "A comprehensive AI-powered chatbot application developed using React Native, GPT models, and DALL·E, created as a graduation project. The chatbot integrates emotion detection, text classification, and image generation for interactive and character-based conversations.",
+    links: [],
     modalContent: [
-      "Utilized PHP Laravel for backend development.",
-      "Implemented interactive user interfaces with React.",
-      "Focused on user management and content delivery.",
-      "Ensured scalability and security of the platform.",
+      "Integrated GPT models for natural language processing, enabling the chatbot to detect emotions, classify user inputs, and generate contextually accurate responses.",
+      "Implemented DALL·E for image generation based on user prompts, enhancing the interactive experience with visual content.",
+      "Designed a dynamic character system, allowing the chatbot to fully embody specific personas with consistent behavior and historical context.",
+      "Included functionality for users to create their own characters and chat with them, as well as interact with popular figures.",
+      "Ensured smooth performance and seamless integration of complex API calls across multiple mobile platforms.",
+      "Implemented recursive data handling functions to manage and present nested information in a structured manner."
     ],
-  },
-  {
-    id: 6,
-    imgSrc: "assets/images/alifbee_academy.png",
-    title: "Alifbee Academy",
-    description:
-      "An extension of the Alifbee platform focused on providing educational resources and tools.",
-    links: [{"title":"", "href": "https://app.alifbee.com/"}],
-    modalContent: [
-      "Developed backend with PHP Laravel.",
-      "Designed frontend with React and Blade.",
-      "Enhanced user experience with modern, responsive design.",
-      "Supported various educational features and tools.",
-    ],
-  },
-  {
-    id: 7,
-    imgSrc: "assets/images/dicom_viewer.png",
-    title: "DICOM Web Viewer",
-    description:
-      "A web-based viewer for medical imaging data in the DICOM format.",
-    links: [{"title":"", "href": "https://app.alifbee.com/"}],
-    modalContent: [
-      "Developed the user interface for handling and displaying complex medical images.",
-      "Ensured compatibility with various browsers and devices.",
-      "Focused on performance and efficient rendering of images.",
-      "Collaborated with medical professionals to refine the user interface.",
-    ],
-  },
+  }
+  
+  // {
+  //   id: 5,
+  //   imgSrc: "assets/images/lms.png",
+  //   title: "LMS (Learning Management System)",
+  //   description:
+  //     "An educational platform for managing and delivering online learning content.",
+  //   links: [{"title":"", "href": "https://app.alifbee.com/"}],
+  //   modalContent: [
+  //     "Utilized PHP Laravel for backend development.",
+  //     "Implemented interactive user interfaces with React.",
+  //     "Focused on user management and content delivery.",
+  //     "Ensured scalability and security of the platform.",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   imgSrc: "assets/images/alifbee_academy.png",
+  //   title: "Alifbee Academy",
+  //   description:
+  //     "An extension of the Alifbee platform focused on providing educational resources and tools.",
+  //   links: [{"title":"", "href": "https://app.alifbee.com/"}],
+  //   modalContent: [
+  //     "Developed backend with PHP Laravel.",
+  //     "Designed frontend with React and Blade.",
+  //     "Enhanced user experience with modern, responsive design.",
+  //     "Supported various educational features and tools.",
+  //   ],
+  // }
 ];
 
 export const qualificationsData: QualificationsData = {
