@@ -28,7 +28,7 @@ export const footerData: FooterType = {
 };
 
 export const aboutData: AboutData = {
-  imageSrc: "/assets/images/frontend.jpeg",
+  imageSrc: "assets/images/frontend.jpeg",
   description:
     "Motivated 4th-year computer engineering student at Marmara University, passionate about web development, seeking a challenging internship to enhance skills. With extensive experience as a game developer intern and a track record of successful web projects, I bring valuable insights in interactive design and problem-solving.",
   infoItems: [
@@ -60,7 +60,7 @@ export const homeData: HomeData = {
     },
     { href: "https://wa.link/a2guid", iconClass: "uil uil-whatsapp" },
   ],
-  imageSrc: "/assets/images/perfil.png",
+  imageSrc: "assets/images/perfil.png",
   dataSections: {
     title: "Hi, I'm Mohammad",
     subtitle: "Web Developer",
@@ -74,7 +74,7 @@ export const homeData: HomeData = {
 export const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    imgSrc: "/assets/images/articles_app.png",
+    imgSrc: "assets/images/articles_app.png",
     title: "Dynamic Articles Web Application with PHP",
     description:
       "Designed and developed a dynamic web application using PHP...",
@@ -90,7 +90,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 2,
-    imgSrc: "/assets/images/articles_app.png",
+    imgSrc: "assets/images/articles_app.png",
     title: "2Dynamic Articles Web Application with PHP",
     description:
       "Designed and developed a dynamic web application using PHP...",
@@ -112,19 +112,16 @@ export const qualificationsData: QualificationsData = {
       title: "Dammam School",
       subtitle: "Saudi Arabia - Secondary School",
       period: "2014 - 2017",
-      isLast: false,
     },
     {
       title: "İTO 15 Temmuz Şehitleri AİHL",
       subtitle: "Turkey - High School",
       period: "2017 - 2020",
-      isLast: false,
     },
     {
       title: "Computer Engineer",
       subtitle: "Marmara University",
       period: "2020 - 2024",
-      isLast: true,
     },
   ],
   work: [
@@ -132,13 +129,11 @@ export const qualificationsData: QualificationsData = {
       title: "Game Developer",
       subtitle: "Turkey - Intern at Wolves Interactive",
       period: "2022",
-      isLast: false,
     },
     {
       title: "Web Developer",
       subtitle: "Freelance - Online",
       period: "2023",
-      isLast: true,
     },
   ],
 };

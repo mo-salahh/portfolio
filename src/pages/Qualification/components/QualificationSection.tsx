@@ -3,18 +3,17 @@ import QualificationContent from './QualificationContent';
 import QualificationTabs from './QualificationTabs';
 import { QualificationItemType } from '../types';
 
-
 interface QualificationProps {
     qualifications: {
-        education: QualificationItemType[];
-        work: QualificationItemType[];
+        [key: string]: QualificationItemType[];
     };
 }
 
 const QualificationSection: React.FC<QualificationProps> = ({ qualifications }) => {
-    const [activeTab, setActiveTab] = useState<'education' | 'work'>('education');
+    const tabs = Object.keys(qualifications);
+    const [activeTab, setActiveTab] = useState<string>(tabs[0]);
 
-    const handleTabClick = (tab: 'education' | 'work') => {
+    const handleTabClick = (tab: string) => {
         setActiveTab(tab);
     };
 
@@ -24,11 +23,14 @@ const QualificationSection: React.FC<QualificationProps> = ({ qualifications }) 
             <span className="section__subtitle">My personal journey</span>
 
             <div className="qualification__container container">
-                <QualificationTabs activeTab={activeTab} onTabClick={handleTabClick} />
+                <QualificationTabs activeTab={activeTab} onTabClick={handleTabClick} tabs={tabs} />
 
                 <div className="qualification__sections">
-                    <QualificationContent items={qualifications.education} />
-                    <QualificationContent items={qualifications.work} />
+                    {tabs.map((tab) => (
+                        activeTab === tab && (
+                            <QualificationContent key={tab} items={qualifications[tab]} />
+                        )
+                    ))}
                 </div>
             </div>
         </section>

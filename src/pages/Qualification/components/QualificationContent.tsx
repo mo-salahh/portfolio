@@ -16,6 +16,7 @@ const QualificationContent: React.FC<QualificationContentProps> = ({ items }) =>
                     subtitle={item.subtitle}
                     period={item.period}
                     isLast={index === items.length - 1}
+                    index={index}
                 />
             ))}
         </div>

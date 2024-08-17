@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface ServiceModalProps {
     title: string;
@@ -7,9 +7,24 @@ interface ServiceModalProps {
 }
 
 const ServiceModal: React.FC<ServiceModalProps> = ({ title, description, onCloseModal }) => {
+    const modalRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+                onCloseModal();
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [onCloseModal]);
+
     return (
-        <div className="services__modal">
-            <div className="services__modal-content">
+        <div className="services__modal active-modal">
+            <div className="services__modal-content" ref={modalRef}>
                 <h4 className="services__modal-title">{title}</h4>
                 <i
                     className="uil uil-times services__modal-close"

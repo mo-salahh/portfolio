@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ServiceItem from './ServiceItem';
 import ServiceModal from './ServiceModal';
 import { ServicesData } from '../types';
@@ -11,7 +11,7 @@ const ServicesList: React.FC<ServicesListProps> = ({ services }) => {
     const [activeModal, setActiveModal] = useState<string | null>(null);
 
     const handleModalOpen = (id: string) => {
-        setActiveModal(id);
+        setActiveModal(id);        
     };
 
     const handleModalClose = () => {

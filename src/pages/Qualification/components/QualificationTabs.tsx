@@ -1,27 +1,24 @@
 import React from 'react';
 
 interface QualificationTabsProps {
-    activeTab: 'education' | 'work';
-    onTabClick: (tab: 'education' | 'work') => void;
+    activeTab: string;
+    onTabClick: (tab: string) => void;
+    tabs: string[];
 }
 
-const QualificationTabs: React.FC<QualificationTabsProps> = ({ activeTab, onTabClick }) => {
+const QualificationTabs: React.FC<QualificationTabsProps> = ({ activeTab, onTabClick, tabs }) => {
     return (
         <div className="qualification__tabs">
-            <div
-                className={`qualification__button button--flex ${activeTab === 'education' ? 'qualification__active' : ''}`}
-                onClick={() => onTabClick('education')}
-            >
-                <i className="uil uil-graduation-cap qualification__icon"></i>
-                Education
-            </div>
-            <div
-                className={`qualification__button button--flex ${activeTab === 'work' ? 'qualification__active' : ''}`}
-                onClick={() => onTabClick('work')}
-            >
-                <i className="uil uil-briefcase-alt qualification__icon"></i>
-                Work
-            </div>
+            {tabs.map((tab) => (
+                <div
+                    key={tab}
+                    className={`qualification__button button--flex ${activeTab === tab ? 'qualification__active' : ''}`}
+                    onClick={() => onTabClick(tab)}
+                >
+                    <i className={`uil ${tab === 'education' ? 'uil-graduation-cap' : 'uil-briefcase-alt'} qualification__icon`}></i>
+                    {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </div>
+            ))}
         </div>
     );
 };
