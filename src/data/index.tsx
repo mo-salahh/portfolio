@@ -30,9 +30,9 @@ export const footerData: FooterType = {
 export const aboutData: AboutData = {
   imageSrc: "assets/images/frontend.jpeg",
   description:
-    "I am a Computer Engineer, graduated from Marmara University, with a strong passion for web development. I have over two years of experience in both frontend and backend development, along with hands-on experience in game development and desktop applications. I am seeking a challenging role to further hone my skills. My experience spans across multiple companies, with a portfolio of successfully completed projects that showcase my ability to solve complex problems and deliver interactive, user-friendly solutions.",
+    "I am a Computer Engineer, graduated from Marmara University, with a strong passion for web development. I have over three years of experience in both frontend and backend development, along with hands-on experience in mobile application development. I am seeking a challenging role to further hone my skills. My experience spans across multiple companies, with a portfolio of successfully completed projects that showcase my ability to solve complex problems and deliver interactive, user-friendly solutions.",
   infoItems: [
-    { title: "02+", name: "Years of \nExperience" },
+    { title: "03+", name: "Years of \nExperience" },
     { title: "20+", name: "Completed \nProjects" },
     { title: "03", name: "Companies \nWorked" },
   ],
@@ -60,9 +60,9 @@ export const homeData: HomeData = {
     },
     { href: "https://wa.link/a2guid", iconClass: "uil uil-whatsapp" },
   ],
-  imageSrc: "assets/images/perfil.png",
+  imageSrc: "assets/images/perfil_new1.png",
   dataSections: {
-    title: "Hi, I'm Mohammad",
+    title: "Mohammad Salah",
     subtitle: "Full Stack Web Developer",
     description:
       "A Full Stack Web Developer with extensive experience in both frontend and backend development. I am dedicated to producing high-quality work and delivering robust solutions across various web projects.",
@@ -79,7 +79,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee",
     description:
       "A comprehensive platform for educational and entertainment purposes, accessible via mobile applications and websites.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title":"Web", "href": "https://app.alifbee.com/"}, {"title":"Android", "href": "https://play.google.com/store/apps/details?id=tr.com.arabeeworld.arabee&pcampaignid=web_share"}],
     modalContent: [
       "Developed and maintained backend services using Django.",
       "Integrated FastAPI for enhanced performance.",
@@ -93,7 +93,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee Kids",
     description:
       "A specialized mobile application targeting children's educational content.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title": 'Google Store', "href": 'https://alifbee.app/alifbeekids-app'}, {"title": 'Apple Store', "href": 'https://alifbee.app/alifbeekids-app'}],
     modalContent: [
       "Built backend services using Django.",
       "Ensured secure and efficient content management.",
@@ -107,7 +107,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "CRM",
     description:
       "A customer relationship management system designed to streamline business processes and client interactions.",
-    githubLink: "", // Add the GitHub link if available
+    links: [],
     modalContent: [
       "Implemented backend using PHP Laravel.",
       "Developed the user interface with React and Blade.",
@@ -121,7 +121,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Adam",
     description:
       "A data entry system used to manage and input data for the primary projects, Alifbee and Alifbee Kids.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title":"", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Developed backend with PHP Laravel.",
       "Handled data management and integration with Alifbee and Alifbee Kids.",
@@ -135,7 +135,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "LMS (Learning Management System)",
     description:
       "An educational platform for managing and delivering online learning content.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title":"", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Utilized PHP Laravel for backend development.",
       "Implemented interactive user interfaces with React.",
@@ -149,7 +149,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Alifbee Academy",
     description:
       "An extension of the Alifbee platform focused on providing educational resources and tools.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title":"", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Developed backend with PHP Laravel.",
       "Designed frontend with React and Blade.",
@@ -163,7 +163,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "DICOM Web Viewer",
     description:
       "A web-based viewer for medical imaging data in the DICOM format.",
-    githubLink: "", // Add the GitHub link if available
+    links: [{"title":"", "href": "https://app.alifbee.com/"}],
     modalContent: [
       "Developed the user interface for handling and displaying complex medical images.",
       "Ensured compatibility with various browsers and devices.",
@@ -182,15 +182,25 @@ export const qualificationsData: QualificationsData = {
         period: "2022",
       },
       {
-        title: "Full-Stack Web Developer",
+        title: "Front-End Web Developer",
         subtitle: "Turkey - Full-time - Alifbee Company",
+        period: "2022 - 2023",
+      },
+      {
+        title: "Back-End Web Developer",
+        subtitle: "Turkey - Full-time - Alifbee Company",
+        period: "2023 - 2024",
+      },
+      {
+        title: "Full-Stack Web Developer",
+        subtitle: "Freelance",
         period: "2023 - Present",
       },
       {
-        title: "Front-End Web Developer",
-        subtitle: "Remote - Diagnostics Elite",
+        title: "Full-Stack Web Developer",
+        subtitle: "Turkey - Full-time - Alifbee Company",
         period: "2024 - Present",
-      },
+      }
     ],
     education: [
       {
@@ -294,6 +304,9 @@ export const skillCategories: SkillCategoryType[] = [
     skills: [
       { name: "Docker", percentage: "75%" },
       { name: "Jenkins (CI/CD)", percentage: "65%" },
+      { name: "Kubernetes", percentage: "60%" },
+      { name: "Terraform", percentage: "55%" },
+      { name: "AWS", percentage: "70%" }
     ],
   },
   {
@@ -306,6 +319,16 @@ export const skillCategories: SkillCategoryType[] = [
       { name: "GitHub", percentage: "" },
       { name: "Bitbucket", percentage: "" },
       { name: "Plastic SCM", percentage: "" },
+    ],
+  },
+  {
+    id: "mobile-application-development",
+    title: "Mobile Application Development",
+    subtitle: "More than 1 year",
+    icon: "uil-mobile-android",
+    skills: [
+      { name: "Android (Java)", percentage: "75%" },
+      { name: "React Native", percentage: "70%" },
     ],
   },
   {

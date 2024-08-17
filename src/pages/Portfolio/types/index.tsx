@@ -3,6 +3,6 @@ export interface PortfolioItem {
   imgSrc: string;
   title: string;
   description: string;
-  githubLink: string;
+  links: { title: string; href: string }[];
   modalContent: string[];
 }

@@ -35,7 +35,7 @@ const PortfolioList: React.FC<PortfolioListProps> = ({ items }) => {
               imgSrc={item.imgSrc}
               title={item.title}
               description={item.description}
-              githubLink={item.githubLink}
+              links={item.links}
               onViewMore={() => handleViewMore(item.id)}
             />
           </SwiperSlide>
