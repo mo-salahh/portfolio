@@ -314,6 +314,17 @@ export const skillCategories: SkillCategoryType[] = [
     ],
   },
   {
+    id: "ai-development",
+    title: "AI Development",
+    subtitle: "More than 1 year",
+    icon: "uil-robot",
+    skills: [
+      { name: "GPT-3 Prompt Engineering", percentage: "75%" },
+      { name: "Natural Language Processing (NLP)", percentage: "70%" },
+      { name: "AI Chatbot Development", percentage: "70%" },
+    ],
+  },
+  {
     id: "devops",
     title: "DevOps",
     subtitle: "",
