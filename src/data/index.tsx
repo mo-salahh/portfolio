@@ -159,35 +159,6 @@ export const portfolioItems: PortfolioItem[] = [
       "Implemented recursive data handling functions to manage and present nested information in a structured manner."
     ],
   }
-  
-  // {
-  //   id: 5,
-  //   imgSrc: "assets/images/lms.png",
-  //   title: "LMS (Learning Management System)",
-  //   description:
-  //     "An educational platform for managing and delivering online learning content.",
-  //   links: [{"title":"", "href": "https://app.alifbee.com/"}],
-  //   modalContent: [
-  //     "Utilized PHP Laravel for backend development.",
-  //     "Implemented interactive user interfaces with React.",
-  //     "Focused on user management and content delivery.",
-  //     "Ensured scalability and security of the platform.",
-  //   ],
-  // },
-  // {
-  //   id: 6,
-  //   imgSrc: "assets/images/alifbee_academy.png",
-  //   title: "Alifbee Academy",
-  //   description:
-  //     "An extension of the Alifbee platform focused on providing educational resources and tools.",
-  //   links: [{"title":"", "href": "https://app.alifbee.com/"}],
-  //   modalContent: [
-  //     "Developed backend with PHP Laravel.",
-  //     "Designed frontend with React and Blade.",
-  //     "Enhanced user experience with modern, responsive design.",
-  //     "Supported various educational features and tools.",
-  //   ],
-  // }
 ];
 
 export const qualificationsData: QualificationsData = {
@@ -279,7 +250,7 @@ export const skillCategories: SkillCategoryType[] = [
   {
     id: "backend-development",
     title: "Backend Development",
-    subtitle: "More than 2 years",
+    subtitle: "More than 3 years",
     icon: "uil-server",
     skills: [
       { name: "Laravel - PHP", percentage: "90%" },
@@ -291,7 +262,7 @@ export const skillCategories: SkillCategoryType[] = [
   {
     id: "frontend-development",
     title: "Frontend Development",
-    subtitle: "More than 2 years",
+    subtitle: "More than 3 years",
     icon: "uil-brackets-curly",
     skills: [
       { name: "React", percentage: "90%" },
